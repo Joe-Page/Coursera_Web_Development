@@ -1,0 +1,91 @@
+/****** Universal Rules ******/
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: courier;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.75em;
+	margin-top: 28px; /* My girlfriend picked the number 28. */
+}
+
+h2 {
+	float: right;
+	border: 1px solid black;
+	padding: 10px;
+	font-size: 1.25em;
+}
+
+p {
+	padding: 10px;
+	clear: right;
+}
+
+section {
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin: 28px 2%;
+	background-color: cyan; /* My girlfriend picked this color. */
+}
+
+/****** Colors ******/
+
+.chicken h2 {
+	background-color: cornflowerblue; /* Chickens eat corn. */
+}
+
+.beef h2 {
+	background-color: lawngreen; /* Cows eat green lawns. */
+}
+
+.sushi h2 {
+	background-color: salmon; /* Salmon is a common ingredient in sushi. */
+}
+
+/****** Desktop version ******/
+
+@media (min-width: 992px) {
+	section {
+		width: 30%;
+		/* If the width of this <section>, the horizontal margin of this <section>, or the padding of the <body> are higher, the "sushi" box will be bumped to the next line.*/
+		float: left;
+	}
+
+	.chicken, .sushi {
+		margin: 28px 2.5%;
+	}
+
+	.beef {
+		margin: 28px 0;
+	}
+}
+
+/****** Tablet version ******/
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.chicken, .beef {
+		width: 47%;
+		position: relative;
+		float: left;
+	}
+
+	.beef {
+		margin-left: 0; /* The cows ate this margin which made all the margins in this row equal. */
+	}
+
+	.sushi {
+		width: 96%;
+		clear: left;
+	}
+}
+
+/****** Mobile version ******/
+
+@media (max-width: 767px) {
+	section {
+		width: 96%;
+	}
+}
