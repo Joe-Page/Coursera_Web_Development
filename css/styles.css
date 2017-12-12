@@ -83,6 +83,7 @@ section .foods {
 	background-color: lawngreen;
 	color: sienna;
 	padding: 16px;
+	border: 1px solid sienna;
 }
 
 h3 {
