@@ -79,7 +79,7 @@ h2 #menu {
 	clear: both;
 }
 
-div.container-fluid section {
+section.content {
 	background-color: lawngreen;
 	color: sienna;
 	padding: 16px;
