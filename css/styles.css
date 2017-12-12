@@ -79,7 +79,7 @@ h2 #menu {
 	clear: both;
 }
 
-section.foods {
+section .foods {
 	background-color: lawngreen;
 	color: yellow;
 	padding: 16px;
