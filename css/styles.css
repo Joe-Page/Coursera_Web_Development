@@ -90,7 +90,7 @@ h3 {
 	margin-top: 0;
 }
 
-#chicken, #beef, #sushi {
+.menu-item {
 	position: relative;
 	border: 1px solid sienna;
 	margin-bottom: 64px;
